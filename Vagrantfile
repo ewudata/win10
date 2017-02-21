@@ -16,5 +16,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
       vb.customize ["setextradata", "global", "GUI/SuppressMessages", "all"]
   end
-  config.vm.provision "shell", path: "provision.ps1",  privileged: false 
+  # config.vm.provision "shell", path: "provision.ps1",  privileged: false 
 end
